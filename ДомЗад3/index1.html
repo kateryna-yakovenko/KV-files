@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head lang="uk">
+    <meta charset="UTF-8">
+    <title>My Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="main1.css" />
+</head>
+<body>
+<div class="bl-background">
+    <div class="bl-list" id="bl-list">
+        <div class="placeholder">
+            <input type="text" name="Назва товару" placeholder="Назва товару" id="newGoodName">
+            <button class="placeholder-button" id="addBtn" data-tooltip="Add">Додати</button>
+        </div>
+        <hr> <!-- <hr> - робить лінію  -->
+
+        <div class="bl-row" data-badge="tomato">
+
+            <div class="bl-product">
+                Помідори
+                
+            </div>
+            <div class="bl-count">
+                <button class="bl-minus" data-tooltip="Decrease">-</button>
+                <span class="bl-label">3</span>
+                <button class="bl-plus" data-tooltip="Increase">+</button>
+
+                
+            </div>
+            
+            <div class="bl-buttons">
+                <button class="bl-buy" data-tooltip="Bought">Купленo</button>
+                <button class="bl-no-buy" data-tooltip="Bought">Не купленo</button>
+                <button class="bl-cancel" data-tooltip="Delete">×</button>
+            </div>
+        </div>
+        <hr> 
+        
+        <div class="bl-row" data-badge="cheese">
+
+            <div class="bl-product">
+              Сир
+               
+            </div>
+            <div class="bl-count">
+                <button class="bl-minus" data-tooltip="Decrease">-</button>
+                <span class="bl-label">3</span>
+                <button class="bl-plus" data-tooltip="Increase">+</button>
+
+                
+            </div>
+            
+            <div class="bl-buttons">
+                <button class="bl-buy" data-tooltip="Bought">Купленo</button>
+                <button class="bl-no-buy" data-tooltip="Bought">Не купленo</button>
+                <button class="bl-cancel" data-tooltip="Delete">×</button>
+            </div>
+        </div>
+        <hr> 
+        <div class="bl-row" data-badge="cookies">
+            <div class="bl-product" >
+                Печиво
+                
+            </div>
+            <div class="bl-count">
+                <button class="bl-minus" data-tooltip="Decrease">-</button>
+                <span class="bl-label">3</span>
+                <button class="bl-plus" data-tooltip="Increase">+</button>
+
+                
+            </div>
+            
+            <div class="bl-buttons">
+                <button class="bl-buy" data-tooltip="Bought">Купленo</button>
+                <button class="bl-no-buy" data-tooltip="Bought">Не купленo</button>
+                    <button class="bl-cancel" data-tooltip="Delete">×</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="bl-bought" id="bl-bought">
+        <div class="bl-title">Залишилося</div>
+        <hr> 
+        <div id="badgeList">
+            <div class="tomato badgeList__badge">
+                <p> Помідори </p> 
+                <p id="one" class="bought__badge"> 3 </p>
+            </div>
+            <div class="cookies badgeList__badge">
+                <p> Печиво </p> 
+                <p id="one" class="bought__badge"> 3 </p>
+            </div>
+            <div class="cheese badgeList__badge">
+                <p> Сир </p> 
+                <p id="one" class="bought__badge"> 3 </p>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+
+        <hr> 
+        <div class="bl-title">Купленo</div>
+        <hr> 
+        
+    </div>
+</div>
+<div class="badge">
+    <p class="badge__buy-list">Buy List</p>
+    <p class="badge__fullname">Yakovenko Kateryna</p>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
