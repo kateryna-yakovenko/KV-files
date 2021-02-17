@@ -1,0 +1,44 @@
+@meatPizza: gray;
+@cardWidth: 250px;
+.pizza-card {
+  padding: 0;
+  margin-bottom: 30px;
+  width: min-content;
+  img {
+    max-width: @cardWidth*0.96;
+  }
+
+  h4 {
+    color: @buttonColor;
+    margin: 10px;
+    font-weight: bold;
+  }
+  p{
+    margin: 10px;
+    font-size: 12px;
+  }
+  .description{
+    color: @meatPizza;
+  }
+}
+
+@media(max-width: 1200px){
+    .pizza-card {
+  img {
+    max-width: @cardWidth*0.80;
+  }
+  }
+}
+@media(max-width: 1000px){
+    .pizza-card {
+  img {
+  }
+  }
+}
+@media(max-width: 790px){
+    .pizza-card {
+  img {
+  max-width: @cardWidth*0.80;
+  }
+  }
+}
