@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="uk">
+  <meta charset="UTF-8" />
+  <title>My Page</title>
+  <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body style="background-color: #DADADA; font-family: Arial, Helvetica, sans-serif">
+  <div class="container">
+    <div class="minicont" id="leftcont" style=" width: 60%; min-width: 300px;">
+      <div class="my-input">
+        <input type="text" id="myInput" placeholder="Назва товару" style="box-sizing: border-box; width: 100%" />
+        <button class="add tooltip" onclick="insertNewProduct(document.getElementById('myInput').value)">
+          Додати<span class="tooltiptext">Add</span>
+        </button>
+      </div>
+
+      <div class="product" id="product_template">
+        <div class="label"></div>
+        <input type="text" class="new-name" placeholder="Нова назва" />
+        <div class="count">
+          <button class="round_button tooltip cancel">
+            -<span class="tooltiptext">Decrement</span>
+          </button>
+          <span class="numlabel">1</span>
+          <button class="round_button tooltip">
+            +<span class="tooltiptext">Increment</span>
+          </button>
+        </div>
+        <div class="buttons">
+          <button class="button tooltip">
+            Купленo<span class="tooltiptext">Bought</span>
+          </button>
+          <button class="button tooltip cancel">
+            x<span class="tooltiptext">Delete</span>
+          </button>
+
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="minicont" id="rightcont" style=" width: 30%">
+      <div class="bl-title" style="border-bottom: 1px solid rgb(206, 200, 200)">
+        <h3 style="margin: 0">Залишилося</h3>
+      </div>
+      <div id="left">
+
+        <span class="item" id="item_template">
+          <span class="orange-button">1</span>
+        </span>
+
+      </div>
+      <div class="bl-title" style="border-top: 1px solid rgb(206, 200, 200)">
+        <h3 style="margin: 0">Куплено</h3>
+      </div>
+      <div id="cart"></div>
+
+      <span class="item" id="bought-item_template" style="text-decoration: line-through">
+        <span class="orange-button"></span>
+      </span>
+
+    </div>
+  </div>
+  <div class="bage">
+    <div class="buylist">Buy List</div>
+    <div class="name">
+      Created by: <br />
+      <div style="font-size: 1.3em">Katya Yakovenko</div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
